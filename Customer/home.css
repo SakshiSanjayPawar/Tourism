@@ -1,0 +1,247 @@
+/* Embedded CSS for simplicity */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+/* Navbar */
+#navbar-horizontal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7380ec; /* Primary color */
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between; /* Align items to the start and end of the container */
+}
+
+
+
+#navbar-horizontal li {
+    margin-right: 20px;
+}
+#navbar-btn {
+    display: flex;
+    align-items: center; /* Align buttons vertically */
+    list-style-type: none; /* Remove bullet points */
+}
+
+#navbar-btn a {
+    margin-left: 10px; /* Add spacing between buttons */
+}
+
+#navbar-horizontal li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: font-weight 0.3s ease; /* Add transition for font weight */
+}
+
+#navbar-horizontal li a:hover,
+#navbar-horizontal li a:focus,
+#navbar-horizontal li a:active {
+    font-size: 20px; /* Increase text size on hover */
+    color: white; /* Change text color to white */
+}
+
+/* Buttons */
+.login-btn,
+.signup-btn {
+    padding: 10px 20px;
+    background-color: magenta; /* Magenta colored button */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: font-size 0.3s ease, color 0.3s ease; /* Add transition for font size and color */
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    font-size: 18px; /* Increase text size on hover */
+    color: white; /* Change text color to white on hover */
+}
+
+/* Carousel */
+.carousel-item img {
+    width: 60%; /* Covering 60% of the screen */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Scale image without distortion */
+    max-width: 100%; /* Ensure image doesn't exceed parent container */
+    max-height: 100%; /* Ensure image doesn't exceed parent container */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px;
+    bottom: 0; /* Align caption to bottom */
+    width: 100%; /* Take full width of carousel */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    visibility: visible !important; /* Make the arrows visible */
+}
+
+/* Packages */
+h3 {
+    text-align: center;
+    color: #7380ec; /* Primary color */
+    font-size: 24px; /* Increase font size */
+    margin-bottom: 30px; /* Add some bottom margin */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 1px; /* Add letter spacing */
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure cover fit */
+    transition: opacity 0.5s ease;
+}
+
+.card:hover img {
+    opacity: 0.3;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .info {
+    opacity: 1;
+}
+
+.info h4 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.info button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.info button:hover {
+    background-color: black;
+}
+
+/* Enquiry */
+h2 {
+    text-align: center;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: plum;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enquiry-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 50px auto; /* Center the form horizontally */
+    border-radius: 10px;
+    max-width: 600px; /* Set maximum width */
+    width: 90%; /* Take up 90% of the available width */
+}
+
+.enquiry-form h2 {
+    text-align: center;
+    color: black;
+}
+
+.enquiry-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.enquiry-form label {
+    margin-bottom: 10px;
+}
+
+.enquiry-form input[type="text"],
+.enquiry-form input[type="tel"],
+.enquiry-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.enquiry-form button {
+    padding: 10px;
+    border: none;
+    background-color: #7380ec; /* Primary color */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enquiry-form button:hover {
+    background-color: #111e88; /* Primary variant color */
+}

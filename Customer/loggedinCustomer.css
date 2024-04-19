@@ -1,0 +1,262 @@
+
+
+/* Embedded CSS for simplicity */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+/* navbar */
+/* Navbar */
+span{
+    color:white;
+}
+.profile{
+    max-height: 40px;
+    max-height:  40px;
+}
+#navbar-horizontal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other elements */
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    padding-left: 30px;
+    /* Increased padding on the left */
+}
+
+#navbar-horizontal li {
+    float: left;
+    margin-right: 20px;
+    /* Creates space between the list items */
+}
+
+#navbar-horizontal li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    /* Increased padding for better click area */
+    text-decoration: none;
+    font-size: 18px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+    /* Smooth transition for size and color */
+}
+
+#navbar-horizontal li a:hover,
+#navbar-horizontal li a:focus,
+/* Focus added for keyboard navigation */
+#navbar-horizontal li a:active {
+    /* Styles for hover, focus, and active */
+    background-color: #ddd;
+    color: black;
+    font-size: 22px;
+    /* Larger font size when active or focused */
+}
+
+.user-profile {
+    cursor: pointer;
+    margin-left: 900px; /* Shifts the profile to the right */
+    color: white; /* Changes text color to white */
+}
+
+#profile-details {
+    position: fixed;
+    top: 50%; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#profile-details h3 {
+    margin-top: 0;
+}
+
+#profile-details p {
+    margin-bottom: 10px;
+}
+      /* Carousel */
+      .carousel-item img {
+        width: 60%; /* Covering 60% of the screen */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Scale image without distortion */
+        max-width: 100%; /* Ensure image doesn't exceed parent container */
+        max-height: 100%; /* Ensure image doesn't exceed parent container */
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        color: white;
+        padding: 10px 20px;
+        bottom: 0; /* Align caption to bottom */
+        width: 100%; /* Take full width of carousel */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        visibility: visible !important; /* Make the arrows visible */
+    }
+/* PACKAGES */
+
+h3 {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensure cover fit */
+    transition: opacity 0.5s ease;
+}
+
+.card:hover img {
+    opacity: 0.3;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .info {
+    opacity: 1;
+}
+
+.info h4 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.info button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.info button:hover {
+    background-color: black;
+}
+
+/* enquiry  */
+
+
+h2 {
+    text-align: center;
+    color: yellow;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+.enquiry-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 50px auto; /* Center the form horizontally */
+    border-radius: 10px;
+    max-width: 600px; /* Set maximum width */
+    width: 90%; /* Take up 90% of the available width */
+}
+
+.enquiry-form h2 {
+    text-align: center;
+    color: yellow;
+}
+
+.enquiry-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.enquiry-form label {
+    margin-bottom: 10px;
+}
+
+.enquiry-form input[type="text"],
+.enquiry-form input[type="tel"],
+.enquiry-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.enquiry-form button {
+    padding: 10px;
+    border: none;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enquiry-form button:hover {
+    background-color: #ffcc00;
+}

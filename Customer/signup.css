@@ -1,0 +1,70 @@
+/* Theme Colors */
+:root {
+    --color-primary: #7380ec;
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+}
+
+/* General Styling */
+html,
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+}
+
+.form {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+#addResult {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select,
+button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-primary-variant);
+}
+
+/* Custom Styling */
+input[type="date"] {
+    /* Additional styling for date input if needed */
+}
+
+/* You can add more custom styling here */

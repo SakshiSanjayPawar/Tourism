@@ -1,0 +1,81 @@
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h2{
+font-size: 50px;
+text-align: center;
+margin-right: 20%;
+color: blueviolet;
+}
+
+.text-image {
+   padding: 5%;  
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+   }
+.box{
+    display: flex;
+    flex-direction: row;
+}
+.image {
+    border-radius: 20%;
+   border:5px solid yellow;
+    background-size: contain;
+    width: 100vh;
+    max-width: 500px;
+    min-height: 450px;
+    margin-right: 20px;
+}
+
+.description-container {
+   
+    width: 60%;
+    flex: 1;
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 4px solid grey;
+    border-radius: 5px;
+}
+
+.description-container h2 {
+    margin-top: 0;
+}
+
+.description-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.description-container li {
+    margin-bottom: 5px;
+}
+
+.description-container p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.TransportTable, .HotelTable {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.TransportTable th, .TransportTable td, .HotelTable th, .HotelTable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.TransportTable th, .HotelTable th {
+    background-color: #f2f2f2;
+}
