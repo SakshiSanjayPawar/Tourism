@@ -1,1 +1,3 @@
-# Tourism
+# Tourism Management System 
+
+	This project optimizes database management while ensuring a seamless frontend experience. MySQL is used for the database, known for its reliability and performance. The frontend is built with HTML, CSS, and JavaScript for structure, styling, and interactivity. PHP connects the frontend to the database, enabling efficient data handling. This combination provides a powerful solution for effective database management and user-friendly interfaces.
