@@ -5,6 +5,8 @@ Tourism Management System
 
 The **Tourism Management System** is a robust web application designed to enhance the management of bookings, customer interactions, and administrative tasks in the tourism industry. This system utilizes PHP for backend processing, MySQL for data management, and HTML, CSS, and JavaScript for a dynamic and user-friendly frontend experience.
 
+![ER diagram](https://github.com/user-attachments/assets/bda7c6a4-671e-4cfd-8210-08ec044d7a27)
+
 ## Key Features
 
 - **User Booking Interface**: Allows users to book and manage their travel plans through an intuitive and responsive interface.
