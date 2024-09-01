@@ -9,8 +9,7 @@ The **Tourism Management System** is a robust web application designed to enhanc
 
 - **User Booking Interface**: Allows users to book and manage their travel plans through an intuitive and responsive interface.
 - **Customer Query Management**: Provides a streamlined process for handling and responding to customer inquiries efficiently.
-- **Payment Processing**: Securely manages payment transactions with encryption and validation mechanisms.
-- **Automated Email Notifications**: Sends automatic updates and confirmations to users regarding their bookings.
+- **Payment Processing**: Securely manages payment transactions with validation mechanisms.
 - **Administrative Dashboard**: Offers comprehensive tools for booking management, report generation, and system oversight.
 
 ## Technologies Used
@@ -19,30 +18,6 @@ The **Tourism Management System** is a robust web application designed to enhanc
 - **Backend**: PHP
 - **Database**: MySQL
 - **Development Environment**: XAMPP (includes Apache and MySQL)
-
-## Setup Instructions
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/tourism-management-system.git
-   cd tourism-management-system
-   ```
-
-2. **Set Up XAMPP**
-   - Download and install [XAMPP](https://www.apachefriends.org/index.html).
-   - Start Apache and MySQL from the XAMPP control panel.
-
-3. **Configure Database**
-   - Open phpMyAdmin (http://localhost/phpmyadmin).
-   - Create a new database named `tourism`.
-   - Import the `database_dump.sql` file into the `tourism` database.
-
-4. **Update PHP Configuration**
-   - Modify the `config.php` file to include your database credentials.
-
-5. **Run the Application**
-   - Move the project folder to the `htdocs` directory of your XAMPP installation (e.g., `C:\xampp\htdocs\tourism-management-system`).
-   - Open your browser and navigate to http://localhost/tourism-management-system.
 
 ## Usage
 
@@ -63,8 +38,3 @@ The **Tourism Management System** is a robust web application designed to enhanc
 
 - **Mobile App Integration**: Develop a mobile application to provide broader access and enhance user experience.
 - **Real-Time Updates**: Implement real-time booking notifications and updates for increased user engagement.
-- **Third-Party Integrations**: Explore integrations with external services to add additional functionality and enhance system capabilities.
-
----
-
-Feel free to modify any sections based on additional details or personal preferences. This format will help potential employers or collaborators quickly understand the scope, impact, and technical aspects of your project.
